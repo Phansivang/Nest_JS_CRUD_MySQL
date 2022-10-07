@@ -3,3 +3,8 @@ export interface UsersDTO {
   fistName: string;
   lastName: string;
 }
+
+export interface SalaryDTO {
+  id: number;
+  salaryStaff: number;
+}

@@ -25,7 +25,6 @@ export class UsersController {
       users,
     };
   }
-
   @Post()
   async createUsers(@Body() data: UsersDTO) {
     const user = await this.usersService.create(data);
