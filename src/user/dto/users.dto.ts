@@ -2,9 +2,6 @@ export interface UsersDTO {
   id: number;
   fistName: string;
   lastName: string;
+  salaryUser: string;
 }
 
-export interface SalaryDTO {
-  id: number;
-  salaryStaff: number;
-}

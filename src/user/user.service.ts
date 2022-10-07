@@ -27,8 +27,7 @@ export class UsersService {
   async update(id: number, data: Partial<UsersDTO>) {
     await this.usersRepository.update({ id }, data);
 
-    // @ts-ignore
-    return await this.usersRepository.findOne({ id });
+    return await this.usersRepository.findOne({ where: { id: id } });
   }
 
   async destroy(id: number) {
